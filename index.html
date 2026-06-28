@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Book Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="book-container">
+        <div id="my-portfolio-book" class="flip-book">
+            
+            <!-- หน้า 1: ปกหน้า -->
+            <div class="page page-cover">
+                <div class="page-content">
+                    <h1>MY PORTFOLIO</h1>
+                    <p class="subtitle">Developer & Creator</p>
+                    <div class="decoration">📖</div>
+                </div>
+            </div>
+
+            <!-- หน้า 2: About Me -->
+            <div class="page">
+                <div class="page-content">
+                    <h2>About Me</h2>
+                    <p>สวัสดีครับ! ยินดีต้อนรับสู่สมุดรวมผลงานรูปแบบ E-book ของผม เอกสารเล่มนี้รวบรวมประวัติ ทักษะ และโปรเจกต์สำคัญที่ผมได้พัฒนาขึ้นมา</p>
+                    <p>ความมุ่งมั่นของผมคือการสร้างสรรค์เว็บแอปพลิเคชันที่ตอบโจทย์ผู้ใช้งานและมีประสิทธิภาพสูง</p>
+                </div>
+            </div>
+
+            <!-- หน้า 3: Skills -->
+            <div class="page">
+                <div class="page-content">
+                    <h2>My Skills</h2>
+                    <p>ทักษะและความสามารถทางด้านเทคนิค:</p>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React</li>
+                        <li><strong>Backend:</strong> Node.js, Express, MongoDB</li>
+                        <li><strong>Tools:</strong> Git, VS Code, Figma</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- หน้า 4: Project 1 -->
+            <div class="page">
+                <div class="page-content">
+                    <h2>Featured Project 01</h2>
+                    <div class="project-img">[ Image Placeholder ]</div>
+                    <p><strong>E-Commerce Platform:</strong> ระบบร้านค้าออนไลน์ที่รองรับการชำระเงินและจัดการสต็อกสินค้าแบบ Real-time</p>
+                </div>
+            </div>
+
+            <!-- หน้า 5: Project 2 -->
+            <div class="page">
+                <div class="page-content">
+                    <h2>Featured Project 02</h2>
+                    <div class="project-img">[ Image Placeholder ]</div>
+                    <p><strong>Task Management App:</strong> แอปพลิเคชันช่วยจัดการงานภายในทีม พร้อมระบบแจ้งเตือนผ่านไลน์</p>
+                </div>
+            </div>
+
+            <!-- หน้า 6: ปกหลัง -->
+            <div class="page page-cover">
+                <div class="page-content">
+                    <h2>Contact Me</h2>
+                    <p>Email: myemail@example.com</p>
+                    <p>GitHub: github.com/username</p>
+                    <h3 style="text-align: center; color: #fff; margin-top: 30px;">THANK YOU</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- เรียกใช้ PageFlip Library ผ่าน CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
