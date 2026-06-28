@@ -1,0 +1,256 @@
+/* 🏛️ Theme: Chula Pink & Champagne Gold (Official & Premium Corporate) */
+
+* {
+    box-sizing: border-box; /* บังคับขนาดหน้ากระดาษเท่ากันทุกหน้า */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* พื้นหลังเข้มหรูหรา */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    font-family: 'Sarabun', 'Mitr', 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* คอนเทนเนอร์คุมให้หนังสือและหน้าปกเดี่ยวอยู่ตรงกลางหน้าจอเสมอ */
+.book-container {
+    width: 100%;
+    max-width: 1000px; /* ความกว้างกางออกหน้าคู่สูงสุด */
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin: auto;
+}
+
+.flip-book {
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    margin: auto;
+}
+
+/* 📄 บังคับหน้ากระดาษให้สมดุลและเท่ากัน */
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: #ffffff; 
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* เนื้อหาภายในกระดาษแต่ละหน้า */
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    border: 1px solid #f3f4f6;
+    padding: 35px;
+    position: relative;
+    background: #ffffff;
+}
+
+/* หัวข้อประจำหน้า (สีชมพูจุฬาฯ) */
+.page-header h2 {
+    font-size: 19px;
+    color: #E76A8D; /* ชมพูจุฬาฯ */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #d4af37; /* ขอบทอง */
+    padding-bottom: 8px;
+}
+
+/* 🧥 ปกหน้าและปกหลัง (ไม่มีติ่งว่างฝั่งซ้ายเมื่อเปิดใช้โหมดเดี่ยว) */
+.page-cover {
+    background: linear-gradient(135deg, #E76A8D 0%, #b83f61 100%) !important;
+    color: #ffffff;
+}
+
+.page-cover .page-content {
+    border: 2px solid #d4af37;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-border {
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    padding: 30px 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-cover h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 15px 0 10px 0;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.divider {
+    color: #d4af37;
+    font-size: 13px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #f9fafb;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logo-icon {
+    font-size: 38px;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+/* สไตล์รายละเอียดเนื้อหาด้านใน */
+.profile-frame {
+    width: 100px;
+    height: 100px;
+    background: #fff5f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 5px auto 20px auto;
+    border: 2px solid #E76A8D;
+}
+
+.bio-text {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.75;
+    text-indent: 25px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.section-intro {
+    font-size: 14.5px;
+    color: #4b5563;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.formal-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.formal-list li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+    color: #374151;
+}
+
+.formal-list li::before {
+    content: '■';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 9px;
+    color: #d4af37;
+}
+
+.bottom-decor {
+    margin-top: auto;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.project-img-container {
+    width: 100%;
+    background: #f9fafb;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 15px;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    background: #27272a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    border-left: 4px solid #E76A8D;
+}
+
+.project-title {
+    font-size: 15px;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.project-desc {
+    font-size: 13px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-box p {
+    margin: 8px 0;
+    font-size: 13.5px;
+    color: #f3f4f6;
+}
+
+.contact-box strong {
+    color: #d4af37;
+}
+
+/* 📱 Responsive ทุกอุปกรณ์ */
+@media (max-width: 1024px) {
+    .book-container { height: auto; min-height: 650px; }
+}
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .book-container { max-width: 100%; height: auto; }
+    .page { padding: 15px; }
+    .page-content { padding: 20px; }
+}
